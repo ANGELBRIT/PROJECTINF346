@@ -5,25 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="output.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </head>
 <body>
      <div class="hidden md:block">
-        <nav class="fixed z-50 flex w-full p-3 bg-white shadow-lg md:items-center md:justify-between" >
+        <nav class="fixed z-50 flex w-full p-3 shadow-lg md:bg-white md:items-center md:justify-between md:p-0"  >
         <div class="w-1/2 ">
 
             <span class="flex w-full ">
-                <img src="logo8.png" alt="error" class="w-5 h-5 rounded-full md:w-12 md:h-12">
-                <span class="flex items-center justify-center font-serif text-sm md:text-2xl">
-                    <span class="font-serif font-bold md:text-2xl text-amber-600 ">
-                        A
+                <img src="logo.png" alt="error" class="w-5 h-5 rounded-full md:w-40 md:h-40">
+                <span class="flex items-center justify-center text-sm md:text-2xl">
+                    <span class="inset-0 font-bold md:text-2xl" style="-webkit-text-stroke: 1px blue;">
+                       stud's
                     </span>
-                    fred
-                    <span class="font-serif font-bold md:text-2xl text-amber-600">
-                        S
                     </span>
-                    akerWoodwork
+                     <span class="flex items-center justify-center text-sm md:text-2xl">
+                     <span class="font-bold md:text-2xl" style="-webkit-text-stroke: 1px rgb(255, 217, 0);">
+                       QUERY
+                    </span>
+                    
                 </span>
-            </span>
+           
 
 
         </div>
@@ -32,16 +35,16 @@
             <ul class="md:flex md:items-center  md:z-auto md:static absolute  w-full left-0 md:w-auto md:px-0 py-4 md:pl-0 pl-7 
       opacity-100  top-[-450px] transition-all ease-in z-[-1]  duration-500">
                 <li class="mx-4 my-6 md:my-0"><a
-                        class="font-bold duration-200 border-b-[3px] border-amber-700 border-t-[3px]  text-amber-600 hover:border-amber-500  hover:text-amber-500" 
+                        class="font-bold duration-200 border-b-[3px] border-yellow-300 border-t-[3px]  text-yellow-300 hover:border-yellow-500  hover:text-yellow-500" 
                         href="#">Home</a></li>
                 <li class="mx-4 my-6 md:my-0"><a
-                        class="font-bold duration-200 hover:border-b-[3px] border-amber-500 hover:border-t-[3px]  hover:text-amber-500"
+                        class="font-bold duration-200 hover:border-b-[3px] border-yellow-500 hover:border-t-[3px]  hover:text-yellow-500"
                         href="cathalog.html">Cathalog</a></li>
                 <li class="mx-4 my-6 md:my-0"><a
-                        class="font-bold duration-200 hover:border-b-[3px] border-amber-500 hover:border-t-[3px]  hover:text-amber-500"
+                        class="font-bold duration-200 hover:border-b-[3px] border-yellow-500 hover:border-t-[3px]  hover:text-yellow-500"
                         href="boutique.html">Ourstore</a></li>
                 <li class="mx-4 my-6 md:my-0"><a
-                        class="font-bold duration-200 hover:border-b-[3px] border-amber-500 hover:border-t-[3px]  hover:text-amber-500"
+                        class="font-bold duration-200 hover:border-b-[3px] border-yellow-500 hover:border-t-[3px]  hover:text-yellow-500"
                         href="message.html">Contact</a></li>
             </ul>
         </div>
@@ -49,15 +52,30 @@
         <div class="flex">
 
             <ion-icon name="search-outline" class="text-2xl cursor-pointer md:hidden" id="loupe"></ion-icon>
-
-
-            <a href="dashboard.html">
-                <div class="flex items-center justify-center w-10 h-10 mx-2 rounded-full cursor-pointer bg-amber-600">
+            <div class="flex items-center justify-center w-10 h-10 mx-2 bg-yellow-300 rounded-full cursor-pointer">
+              <span class="flex items-center justify-center bg-white rounded-full h-9 w-9">
+                <ion-icon name="search-outline"></ion-icon>
+              </span>
+            </div>
+            <div class="flex items-center justify-center w-10 h-10 mx-2 bg-yellow-300 rounded-full cursor-pointer">
+              <span class="flex items-center justify-center bg-white rounded-full h-9 w-9">
+                <ion-icon name="notifications-outline"></ion-icon>
+              </span>
+            </div>
+             <a href="dashboard.html">
+                <div class="flex items-center justify-center w-10 h-10 mx-2 bg-yellow-300 rounded-full cursor-pointer">
               <span class="flex items-center justify-center bg-white rounded-full h-9 w-9">
                 <ion-icon name="person"></ion-icon>
               </span>
             </div>
             </a>
+ <div class="flex items-center justify-center w-10 h-10 mx-2 bg-yellow-300 rounded-full cursor-pointer">
+              <span class="flex items-center justify-center bg-white rounded-full h-9 w-9">
+                <ion-icon name="settings-outline"></ion-icon>
+              </span>
+            </div>
+ 
+           
         </div>
     </nav>
     </div>
@@ -67,50 +85,70 @@
         <nav class="fixed z-10 w-full p-5 bg-white shadow md:flex md:items-center md:justify-between">
             
       <div class="flex items-center justify-between">
-        <span class="">
+<div class="w-1/2 ">
+
+            <span class="flex w-full ">
+                <img src="logo.png" alt="error" class="w-16 h-16 rounded-full ">
+                <span class="flex items-center justify-center text-sm md:text-2xl">
+                    <span class="inset-0 font-bold md:text-2xl" style="-webkit-text-stroke: 1px blue;">
+                       stud's
+                    </span>
+                    </span>
+                     <span class="flex items-center justify-center text-sm md:text-2xl">
+                     <span class="font-bold md:text-2xl" style="-webkit-text-stroke: 1px rgb(255, 217, 0);">
+                       QUERY
+                    </span>
+                    
+                </span>
+           
+
+
+        </div>
+        <!-- <span class="">
                 <img src="logo8.png" alt="error" class="inline w-5 h-5 rounded-full md:w-12 md:h-12">
                 <span class="text-sm md:text-2xl">
-                    <span class="font-serif font-bold md:text-2xl text-amber-600 ">A</span>fred<span
-                        class="font-bold font-serief md:text-2xl text-amber-600">S</span>akerWoodwork</span>
-            </span>
+                    <span class="font-serif font-bold text-yellow-300 md:text-2xl ">A</span>fred<span
+                        class="font-bold text-yellow-300 font-serief md:text-2xl">S</span>akerWoodwork</span>
+            </span> -->
             <div class="flex items-center">
-                <!-- Dans le menu de navigation -->
-<form id="searchForm" class="hidden sm:block">
-    <input type="text" id="searchInput" placeholder="Search...">
-    <button type="submit" id="searchButton">Search</button>
-</form>
+                
 
-                <span class="flex items-center text-2xl cursor-pointer">
+
+                <span class="flex items-center text-xl cursor-pointer">
                     <ion-icon name="search-outline"  id="loupe"></ion-icon>
                 </span>
                 
             <a href="dashboard.html">
-                <div class="flex items-center justify-center w-8 h-8 mx-2 rounded-full cursor-pointer bg-amber-800">
-              <span class="flex items-center justify-center bg-white rounded-full h-7 w-7">
+
+              <span class="flex items-center  text-xl cursor-pointer">
+                <ion-icon name="notifications-outline"></ion-icon>
+              </span>
+                
+              <span class="flex items-center justify-center bg-white rounded-full h-7 w-7 text-xl mx-3">
                 <ion-icon name="person"></ion-icon>
               </span>
-            </div>
+            
             </a>
-        <span class="flex items-center text-2xl cursor-pointer">
-          <ion-icon name="menu-outline" onclick="Menu(this)"></ion-icon>
+        <span class="flex items-center text-xl cursor-pointer">
+          <ion-icon name="menu-outline" onclick="Menu(this)"> </ion-icon>
         </span>
         
            </div>
        
       </div>
-      <ul class=" md:flex md:items-center md:justify-around z-0 md:z-auto md:static absolute bg-amber-600 w-full left-0 
+      <ul class=" md:flex md:items-center md:justify-around z-0 md:z-auto md:static absolute bg-yellow-300 w-full left-0 
       md:opacity-100 opacity-0 top-[-450px] transition-all ease-in duration-500">
          
-                <li class="flex items-center justify-center duration-200 text-amber-600 border-t-[1px] border-b-[1px] border-white hover:bg-amber-600 bg-white hover:text-white"><a
+                <li class="flex items-center justify-center duration-200 text-yellow-300 border-t-[1px] border-b-[1px] border-white hover:bg-yellow-300 bg-white hover:text-white"><a
                         class="my-4 font-bold"
                         href="#">Home</a></li>
-                <li class="flex items-center justify-center duration-200 text-white border-t-[1px] border-b-[1px] border-white hover:bg-amber-600"><a
+                <li class="flex items-center justify-center duration-200 text-white border-t-[1px] border-b-[1px] border-white hover:bg-yellow-300"><a
                         class="my-4 font-bold"
                         href="cathalog.html">Cathalog</a></li>
-                <li class="flex items-center justify-center duration-200 text-white border-t-[1px] border-b-[1px] border-white hover:bg-amber-600"><a
+                <li class="flex items-center justify-center duration-200 text-white border-t-[1px] border-b-[1px] border-white hover:bg-yellow-300"><a
                         class="my-4 font-bold "
                         href="boutique.html">Ourstore</a></li>
-                <li class="flex items-center justify-center duration-200 text-white border-t-[1px] border-b-[1px] border-white hover:bg-amber-600"><a
+                <li class="flex items-center justify-center duration-200 text-white border-t-[1px] border-b-[1px] border-white hover:bg-yellow-300"><a
                         class="my-4 font-bold "
                         href="message.html">Contact</a></li>
            
@@ -121,36 +159,31 @@
     <div class="w-full h-10"></div>
 <div class="w-full h-screen ">
     <div class="relative z-0 w-full h-full" >
-        <img src="image/m/m3.jpeg" alt="error" class="absolute z-20 object-cover w-full h-full"> 
+        <img src="image/image1.png" alt="error" class="absolute z-20 object-cover w-full h-full"> 
         <div class="relative z-30 w-full h-full bg-black/70 ">
-            <div class="relative w-[90%] p-4 m-0 md:m-5 md:p-2 md:w-3/4 md:top-48 top-40 ml-2 md:ml-10">
-                        <div class="absolute inset-0 backdrop-filter backdrop-blur-md w-[95%] ">
-                            <!-- This div will create the blur effect -->
-                        </div>
-                        <div class="relative z-10 pt-0 font-serif text-2xl md:p-2 md:pt-2 text-amber-600 md:text-4xl">
-                           "Crafting Spaces, Crafting Stories: Where Imagination Takes Shape!
-                            Let's create spaces that tell your story."
+<div class="ml-5">
+            <div class="relative w-[95%] p-2 m-0 top-40 ">
+                        <div class="relative z-10  font-serif text-2xl text-yellow-300 ">
+                           "Simplifiez votre parcour academique ,une requete a la fois,vers l'excellence."
 
                         </div>
 
                     </div>
-    <div class="relative w-[75%] p-2 md:m-5 md:block md:top-48 top-40  ml-2 md:ml-10">
-                        <div class="absolute inset-0 backdrop-filter backdrop-blur-2xl">
-                            <!-- This div will create the blur effect -->
-                        </div>
+        <div class="relative w-[75%] p-2  top-40 ">
+              
                         <div class="relative z-10 text-white">
-                            "Immerse yourself in the artistry of bespoke carpentry.
-                            Let us craftspaces that embody your unique narrative,
-                            each piece a testament to your individuality."
+                            "Rejoignez-nous des aujoud'hui pour simplifier votre 
+                            parcours acadamique et transformer vos requetes en
+                            reussites concretes."
                         </div>
 
                     </div>
-     <button class="relative p-2 ml-2 font-bold text-white uppercase rounded-lg md:mx-10 md:top-48 top-44 bg-amber-600 md:ml-10">
+     <button class="relative p-2  font-bold text-white uppercase bg-yellow-300 rounded-lg  top-44 ">
                        read our history
                     </button>
         </div>
     </div>
-    
+    </div>
 </div>
 </body>
 </html>
