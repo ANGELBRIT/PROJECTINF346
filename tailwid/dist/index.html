@@ -1,189 +1,360 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="output.css">
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="output.css">
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </head>
+
 <body>
-     <div class="hidden md:block">
-        <nav class="fixed z-50 flex w-full p-3 shadow-lg md:bg-white md:items-center md:justify-between md:p-0"  >
+
+  <!--------------------------------- -----------------------------------------------------
+-----------------------------------|                    |----------------------------------
+-----------------------------------|code pour la navbar | ----------------------------------
+-----------------------------------|                    |----------------------------------
+------------------------------------------------------------------------------------------>
+
+
+
+<!--------------------------------- -----------------------------------------------------
+-----------------------------------|code pour la navbar grand ecran | --------------------
+----------------------------------------------------------------------------------------->
+  <div class="hidden md:block">
+    <nav class="fixed z-50 flex w-full p-3 shadow-lg md:bg-white md:items-center md:justify-between md:p-0">
+      <div class="w-1/2 ">
+
+        <span class="flex w-full ">
+          <img src="logo.png" alt="error" class="w-5 h-5 rounded-full md:w-40 md:h-40">
+          <span class="flex items-center justify-center text-sm md:text-2xl">
+            <span class="inset-0 font-bold md:text-2xl" style="-webkit-text-stroke: 1px blue;">
+              stud's
+            </span>
+          </span>
+          <span class="flex items-center justify-center text-sm md:text-2xl">
+            <span class="font-bold md:text-2xl" style="-webkit-text-stroke: 1px rgb(255, 217, 0);">
+              QUERY
+            </span>
+
+          </span>
+      </div>
+      
+<!--------------------------------- -----------------------------------------------------
+----------|code pour la  liste dans le menu de navigation | --------------------
+----------------------------------------------------------------------------------------->
+      <div class="w-1/2 md:w-3/4 md:mx-20">
+        <ul class="md:flex md:items-center  md:z-auto md:static absolute  w-full left-0 md:w-auto md:px-0 py-4 md:pl-0 pl-7 
+      opacity-100  top-[-450px] transition-all ease-in z-[-1]  duration-500">
+          <li class="mx-4 my-6 md:my-0"><a
+              class="font-bold duration-200 border-b-[3px] border-indigo-300 border-t-[3px]  text-indigo-300 hover:border-indigo-500  hover:text-indigo-500"
+              href="#">Home</a></li>
+          <li class="mx-4 my-6 md:my-0"><a
+              class="font-bold duration-200 hover:border-b-[3px] border-indigo-500 hover:border-t-[3px]  hover:text-indigo-500"
+              href="cathalog.html">Cathalog</a></li>
+          <li class="mx-4 my-6 md:my-0"><a
+              class="font-bold duration-200 hover:border-b-[3px] border-indigo-500 hover:border-t-[3px]  hover:text-indigo-500"
+              href="boutique.html">Ourstore</a></li>
+          <li class="mx-4 my-6 md:my-0"><a
+              class="font-bold duration-200 hover:border-b-[3px] border-indigo-500 hover:border-t-[3px]  hover:text-indigo-500"
+              href="message.html">Contact</a></li>
+        </ul>
+      </div>
+
+
+<!--------------------------------- -----------------------------------------------------
+----------|code pour les icon dans le menu de navigation | --------------------
+----------------------------------------------------------------------------------------->
+      <div class="flex">
+
+        <ion-icon name="search-outline" class="text-2xl cursor-pointer md:hidden" id="loupe"></ion-icon>
+        <div class="flex items-center justify-center w-10 h-10 mx-2 bg-indigo-300 rounded-full cursor-pointer">
+          <span class="flex items-center justify-center bg-white rounded-full h-9 w-9">
+            <ion-icon name="search-outline"></ion-icon>
+          </span>
+        </div>
+        <div class="flex items-center justify-center w-10 h-10 mx-2 bg-indigo-300 rounded-full cursor-pointer">
+          <span class="flex items-center justify-center bg-white rounded-full h-9 w-9">
+            <ion-icon name="notifications-outline"></ion-icon>
+          </span>
+        </div>
+        <a href="dashboard.html">
+          <div class="flex items-center justify-center w-10 h-10 mx-2 bg-indigo-300 rounded-full cursor-pointer">
+            <span class="flex items-center justify-center bg-white rounded-full h-9 w-9">
+              <ion-icon name="person"></ion-icon>
+            </span>
+          </div>
+        </a>
+        <div class="flex items-center justify-center w-10 h-10 mx-2 bg-indigo-300 rounded-full cursor-pointer">
+          <span class="flex items-center justify-center bg-white rounded-full h-9 w-9">
+            <ion-icon name="settings-outline"></ion-icon>
+          </span>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+<!--------------------------------- -----------------------------------------------------
+-----------------------------------|code pour la navbar resposive | ---------------------
+----------------------------------------------------------------------------------------->
+  <div class="block md:hidden">
+
+    <nav class="fixed z-10 w-full p-5 bg-white shadow md:flex md:items-center md:justify-between">
+
+      <div class="flex items-center justify-between">
         <div class="w-1/2 ">
 
-            <span class="flex w-full ">
-                <img src="logo.png" alt="error" class="w-5 h-5 rounded-full md:w-40 md:h-40">
-                <span class="flex items-center justify-center text-sm md:text-2xl">
-                    <span class="inset-0 font-bold md:text-2xl" style="-webkit-text-stroke: 1px blue;">
-                       stud's
-                    </span>
-                    </span>
-                     <span class="flex items-center justify-center text-sm md:text-2xl">
-                     <span class="font-bold md:text-2xl" style="-webkit-text-stroke: 1px rgb(255, 217, 0);">
-                       QUERY
-                    </span>
-                    
-                </span>
-           
+          <span class="flex w-full ">
+            <img src="logo.png" alt="error" class="w-16 h-16 rounded-full ">
+            <span class="flex items-center justify-center text-sm md:text-2xl">
+              <span class="inset-0 font-bold md:text-2xl" style="-webkit-text-stroke: 1px blue;">
+                stud's
+              </span>
+            </span>
+            <span class="flex items-center justify-center text-sm md:text-2xl">
+              <span class="font-bold md:text-2xl" style="-webkit-text-stroke: 1px rgb(255, 217, 0);">
+                QUERY
+              </span>
+
+            </span>
+
 
 
         </div>
-
-        <div class="w-1/2 md:w-3/4 md:mx-20">
-            <ul class="md:flex md:items-center  md:z-auto md:static absolute  w-full left-0 md:w-auto md:px-0 py-4 md:pl-0 pl-7 
-      opacity-100  top-[-450px] transition-all ease-in z-[-1]  duration-500">
-                <li class="mx-4 my-6 md:my-0"><a
-                        class="font-bold duration-200 border-b-[3px] border-yellow-300 border-t-[3px]  text-yellow-300 hover:border-yellow-500  hover:text-yellow-500" 
-                        href="#">Home</a></li>
-                <li class="mx-4 my-6 md:my-0"><a
-                        class="font-bold duration-200 hover:border-b-[3px] border-yellow-500 hover:border-t-[3px]  hover:text-yellow-500"
-                        href="cathalog.html">Cathalog</a></li>
-                <li class="mx-4 my-6 md:my-0"><a
-                        class="font-bold duration-200 hover:border-b-[3px] border-yellow-500 hover:border-t-[3px]  hover:text-yellow-500"
-                        href="boutique.html">Ourstore</a></li>
-                <li class="mx-4 my-6 md:my-0"><a
-                        class="font-bold duration-200 hover:border-b-[3px] border-yellow-500 hover:border-t-[3px]  hover:text-yellow-500"
-                        href="message.html">Contact</a></li>
-            </ul>
-        </div>
-
-        <div class="flex">
-
-            <ion-icon name="search-outline" class="text-2xl cursor-pointer md:hidden" id="loupe"></ion-icon>
-            <div class="flex items-center justify-center w-10 h-10 mx-2 bg-yellow-300 rounded-full cursor-pointer">
-              <span class="flex items-center justify-center bg-white rounded-full h-9 w-9">
-                <ion-icon name="search-outline"></ion-icon>
-              </span>
-            </div>
-            <div class="flex items-center justify-center w-10 h-10 mx-2 bg-yellow-300 rounded-full cursor-pointer">
-              <span class="flex items-center justify-center bg-white rounded-full h-9 w-9">
-                <ion-icon name="notifications-outline"></ion-icon>
-              </span>
-            </div>
-             <a href="dashboard.html">
-                <div class="flex items-center justify-center w-10 h-10 mx-2 bg-yellow-300 rounded-full cursor-pointer">
-              <span class="flex items-center justify-center bg-white rounded-full h-9 w-9">
-                <ion-icon name="person"></ion-icon>
-              </span>
-            </div>
-            </a>
- <div class="flex items-center justify-center w-10 h-10 mx-2 bg-yellow-300 rounded-full cursor-pointer">
-              <span class="flex items-center justify-center bg-white rounded-full h-9 w-9">
-                <ion-icon name="settings-outline"></ion-icon>
-              </span>
-            </div>
- 
-           
-        </div>
-    </nav>
-    </div>
-    
-    <div class="block md:hidden">
-        
-        <nav class="fixed z-10 w-full p-5 bg-white shadow md:flex md:items-center md:justify-between">
-            
-      <div class="flex items-center justify-between">
-<div class="w-1/2 ">
-
-            <span class="flex w-full ">
-                <img src="logo.png" alt="error" class="w-16 h-16 rounded-full ">
-                <span class="flex items-center justify-center text-sm md:text-2xl">
-                    <span class="inset-0 font-bold md:text-2xl" style="-webkit-text-stroke: 1px blue;">
-                       stud's
-                    </span>
-                    </span>
-                     <span class="flex items-center justify-center text-sm md:text-2xl">
-                     <span class="font-bold md:text-2xl" style="-webkit-text-stroke: 1px rgb(255, 217, 0);">
-                       QUERY
-                    </span>
-                    
-                </span>
-           
-
-
-        </div>
-        <!-- <span class="">
-                <img src="logo8.png" alt="error" class="inline w-5 h-5 rounded-full md:w-12 md:h-12">
-                <span class="text-sm md:text-2xl">
-                    <span class="font-serif font-bold text-yellow-300 md:text-2xl ">A</span>fred<span
-                        class="font-bold text-yellow-300 font-serief md:text-2xl">S</span>akerWoodwork</span>
-            </span> -->
-            <div class="flex items-center">
-                
-
-
-                <span class="flex items-center text-xl cursor-pointer">
-                    <ion-icon name="search-outline"  id="loupe"></ion-icon>
-                </span>
-                
-            <a href="dashboard.html">
-
-              <span class="flex items-center  text-xl cursor-pointer">
-                <ion-icon name="notifications-outline"></ion-icon>
-              </span>
-                
-              <span class="flex items-center justify-center bg-white rounded-full h-7 w-7 text-xl mx-3">
-                <ion-icon name="person"></ion-icon>
-              </span>
-            
-            </a>
-        <span class="flex items-center text-xl cursor-pointer">
-          <ion-icon name="menu-outline" onclick="Menu(this)"> </ion-icon>
-        </span>
-        
-           </div>
        
-      </div>
-      <ul class=" md:flex md:items-center md:justify-around z-0 md:z-auto md:static absolute bg-yellow-300 w-full left-0 
-      md:opacity-100 opacity-0 top-[-450px] transition-all ease-in duration-500">
-         
-                <li class="flex items-center justify-center duration-200 text-yellow-300 border-t-[1px] border-b-[1px] border-white hover:bg-yellow-300 bg-white hover:text-white"><a
-                        class="my-4 font-bold"
-                        href="#">Home</a></li>
-                <li class="flex items-center justify-center duration-200 text-white border-t-[1px] border-b-[1px] border-white hover:bg-yellow-300"><a
-                        class="my-4 font-bold"
-                        href="cathalog.html">Cathalog</a></li>
-                <li class="flex items-center justify-center duration-200 text-white border-t-[1px] border-b-[1px] border-white hover:bg-yellow-300"><a
-                        class="my-4 font-bold "
-                        href="boutique.html">Ourstore</a></li>
-                <li class="flex items-center justify-center duration-200 text-white border-t-[1px] border-b-[1px] border-white hover:bg-yellow-300"><a
-                        class="my-4 font-bold "
-                        href="message.html">Contact</a></li>
-           
-      </ul>  
-    </nav>
-    </div>
-    
-    <div class="w-full h-10"></div>
-<div class="w-full h-screen ">
-    <div class="relative z-0 w-full h-full" >
-        <img src="image/image1.png" alt="error" class="absolute z-20 object-cover w-full h-full"> 
-        <div class="relative z-30 w-full h-full bg-black/70 ">
-<div class="ml-5">
-            <div class="relative w-[95%] p-2 m-0 top-40 ">
-                        <div class="relative z-10  font-serif text-2xl text-yellow-300 ">
-                           "Simplifiez votre parcour academique ,une requete a la fois,vers l'excellence."
+        <div class="flex items-center">
 
-                        </div>
 
-                    </div>
-        <div class="relative w-[75%] p-2  top-40 ">
-              
-                        <div class="relative z-10 text-white">
-                            "Rejoignez-nous des aujoud'hui pour simplifier votre 
-                            parcours acadamique et transformer vos requetes en
-                            reussites concretes."
-                        </div>
 
-                    </div>
-     <button class="relative p-2  font-bold text-white uppercase bg-yellow-300 rounded-lg  top-44 ">
-                       read our history
-                    </button>
+          <span class="flex items-center text-xl cursor-pointer">
+            <ion-icon name="search-outline" id="loupe"></ion-icon>
+          </span>
+
+          <a href="dashboard.html">
+
+            <span class="flex items-center text-xl cursor-pointer">
+              <ion-icon name="notifications-outline"></ion-icon>
+            </span>
+
+            <span class="flex items-center justify-center mx-3 text-xl bg-white rounded-full h-7 w-7">
+              <ion-icon name="person"></ion-icon>
+            </span>
+
+          </a>
+          <span class="flex items-center text-xl cursor-pointer">
+            <ion-icon name="menu-outline" onclick="Menu(this)"> </ion-icon>
+          </span>
+
         </div>
+
+      </div>
+      <ul class=" md:flex md:items-center md:justify-around z-0 md:z-auto md:static absolute bg-y-300 w-full left-0indigo
+      md:opacity-100 opacity-0 top-[-450px] transition-all ease-in duration-500">
+
+        <li
+          class="flex items-center justify-center duration-200 text-indigo-300 border-t-[1px] border-b-[1px] border-white hover:bg-y-300 bg-white hover:text-whindigote">
+          <a class="my-4 font-bold" href="#">Home</a></li>
+        <li
+          class="flex items-center justify-center duration-200 text-white border-t-[1px] border-b-[1px] border-white hover:bg-y-300"indigo
+          <a class="my-4 font-bold" href="cathalog.html">Cathalog</a></li>
+        <li
+          class="flex items-center justify-center duration-200 text-white border-t-[1px] border-b-[1px] border-white hover:bg-y-300"indigo
+          <a class="my-4 font-bold " href="boutique.html">Ourstore</a></li>
+        <li
+          class="flex items-center justify-center duration-200 text-white border-t-[1px] border-b-[1px] border-white hover:bg-y-300"indigo
+          <a class="my-4 font-bold " href="message.html">Contact</a></li>
+
+      </ul>
+    </nav>
+
+
+
+<!--------------------------------- -----------------------------------------------------
+-----------------------------------|                    |----------------------------------
+-----------------------------------|code pour le header | ----------------------------------
+-----------------------------------|                    |----------------------------------
+------------------------------------------------------------------------------------------>
+
+
+  </div>
+
+  <div class="w-full h-10"></div>
+  <div class="w-full h-screen ">
+    <div class="relative z-0 w-full h-full">
+      <img src="image/image1.png" alt="error" class="absolute z-20 object-cover w-full h-full">
+      <div class="relative z-30 w-full h-full bg-black/70 ">
+        <div class="ml-5 top-40 md:pt-48">
+          <div class="relative w-[95%] p-2 m-0 top-40 ">
+            <div class="relative z-10 font-serif text-2xl text-yellow-300 ">
+              "Simplifiez votre parcour academique ,une requete a la fois,vers l'excellence."
+
+            </div>
+
+          </div>
+          <div class="relative w-[75%] p-2  top-40 ">
+
+            <div class="relative z-10 text-white">
+              "Rejoignez-nous des aujoud'hui pour simplifier votre
+              parcours acadamique et transformer vos requetes en
+              reussites concretes."
+            </div>
+
+          </div>
+          <button class="relative p-2 ml-3 font-bold text-white uppercase bg-yellow-400 rounded-lg top-44">
+           login
+          </button>
+        </div>
+      </div>
     </div>
-    </div>
+  </div>
+
+
+  <!--------------------------------- -----------------------------------------------------
+-----------------------------------|                    |----------------------------------
+-----------------------------------|code pour la section| ----------------------------------
+-----------------------------------|                    |----------------------------------
+------------------------------------------------------------------------------------------>
+<section class="block w-full mt-4 mb-10 md:justify-center md:items-center md:flex bg-slate-200">
+<div class="flex items-center justify-center w-full md:w-1/2">
+  <div class="flex items-center justify-center w-full h-64 mt-5 bg-yellow-400 md:rounded-lg md:m-10 md:h-48 md:w-40">
+    <img src="image/image3.png" alt="error " class="md:h-48 mt-10 md:ml-10 md:rounded-lg md:absolute md:w-40 w-[80%] h-64 "> 
+  </div>
 </div>
+<div class="w-full mt-16 md:w-1/2 md:mt-0">
+  <div class="flex items-center justify-center w-full md:block">
+  <span class="font-bold capitalize md:text-2xl ">
+    the best solution will alwas be guaranteed
+  </span>
+</div>
+  <div class="md:w-[70%] w-full md:p-0 p-5">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus perferendis at autem sit obcaecati dignissimos itaque iusto, dicta maxime placeat ex asperiores, minima quae velit doloribus veritatis aliquam quos temporibus.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit eaque autem, itaque aperiam illo veniam repellendus, temporibus nemo fugit perspiciatis maxime reprehenderit quibusdam ullam eum placeat omnis sit, voluptas deserunt.
+ 
+</div>
+
+<button class="p-2 mt-5 mb-10 ml-5 font-bold text-white bg-yellow-400 rounded-sm md:ml-0">
+  see more
+</button>
+</div>
+  
+</section>
+
+
+  <!--------------------------------- -----------------------------------------------------
+-----------------------------------|                    |----------------------------------
+-----------------------------------|code pour le footer | ----------------------------------
+-----------------------------------|                    |----------------------------------
+------------------------------------------------------------------------------------------>
+
+ <footer class="w-full p-3 shadow-lg bg-slate-100 md:items-center">
+                    <div class="flex items-center justify-center w-full">
+        <div class="w-[95%] bg-indigo-500 ">
+            <div class="flex items-center justify-center w-full">
+                <span class="p-2 font-bold text-white">
+                    subscrib to get latest offers
+                </span>
+            </div>
+            <div class="flex items-center justify-center w-full">
+                <div class="md:w-[60%] bg-white p-1 flex md:justify-between mb-5 w-[85%]">
+                    <div class="flex items-center justify-center">
+                         <span class="flex items-center justify-center px-5 text-xl">
+                   <ion-icon name="mail-outline"></ion-icon>
+                       </span>
+                        
+                        <input type="text" placeholder="enter your email address" style="width: 50%; border:none;">
+                    </div>
+                    <div class="">
+                        <button class="p-2 text-white bg-yellow-500 rounded-sm">
+                            subscrib
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+</div>
+ <div class="flex items-center justify-center w-full mt-10">
+        <div class="w-[90%] md:grid grid-cols-3 md:gap-2 ">
+            <div class="">
+                <div class="">
+                    <span class="font-bold">mobile <span class="text-indigo-500">means</span> </span>
+                </div>
+                    <div class="flex"> 
+                       <span class="flex items-center justify-center mr-4 ">
+                         <ion-icon name="call-outline" class="text-xl"></ion-icon>
+                       </span>
+                       683721565
+                    </div>
+                     <div class="flex"> 
+                       <span class="flex items-center justify-center mr-4 ">
+                         <ion-icon name="mail-open-outline" class="text-xl"></ion-icon>
+                       </span>
+                       afredSakerwoodwork@gmail.com
+                    </div>
+                 <div class="flex"> 
+                       <span class="flex items-center justify-center mr-4 ">
+                         <ion-icon name="call-outline" class="text-xl"></ion-icon>
+                       </span>
+                       683721565
+                    </div>
+   
+            </div>
+            <div class="my-5 md:my-0">
+                <div class="">
+                    <span class="font-bold">Discovery </span>
+                </div>
+                    <div class="flex"> 
+                       manufacturing
+                    </div>
+                     <div class="flex"> 
+                       
+                       Renovation
+                    </div>
+                 <div class="flex"> 
+                       
+                       Delivery
+                    </div>
+   
+            </div>
+              <div class="my-5 md:my-0">
+                <div class="">
+                    <span class="font-bold">Services </span>
+                </div>
+                    <div class="flex"> 
+                       Home
+                    </div>
+                     <div class="flex"> 
+                       
+                       Cathalog
+                    </div>
+                 <div class="flex"> 
+                       
+                       Our store
+                    </div>
+                    <div class="flex"> 
+                       
+                       Contac
+                    </div>
+   
+            </div>
+        </div>
+ </div>
+<div class="flex items-center justify-center w-full">
+                <div class="w-[90%] bg-white p-1 flex justify-between my-5">
+                </div>
+</div>
+<div class="w-full h-1 bg-slate-600">
+    
+</div>
+
+        <div class="flex items-center justify-center text-slate-400">copyright &copy; 2023-2024 tous droits
+            reserves</div>
+
+    </footer>
+  
+</footer>
 </body>
+
 </html>
