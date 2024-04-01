@@ -6,8 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="output.css">
-  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
 </head>
 
 <body>
@@ -27,8 +26,8 @@
     <nav class="fixed z-50 flex w-full shadow-lg md:bg-white md:items-center md:justify-between ">
       <div class="w-1/2 ">
 
-        <span class="flex w-full ">
-          <img src="logo1.png" alt="error" class="w-5 h-5 rounded-full md:w-40 md:h-40">
+        <span class="flex w-20 h-20">
+          <img src="logo1.png" alt="error" class="w-5 h-5 rounded-full md:w-20 md:h-20">
 
           </span>
       </div>
@@ -95,7 +94,7 @@
 ----------------------------------------------------------------------------------------->
   <div class="block md:hidden">
 
-    <nav class="fixed z-10 w-full bg-white shadow md:flex md:items-center md:justify-between">
+    <nav class="fixed z-50 w-full bg-white shadow md:flex md:items-center md:justify-between top-0">
 
       <div class="flex items-center justify-between">
         <div class="w-1/2 ">
@@ -123,32 +122,33 @@
             </span>
 
           </a>
-          <span class="flex items-center mr-3 text-2xl cursor-pointer">
-            <img src="icons/menu-outline.svg" onclick="Menu(this)" alt="error" class="w-5 h-5">
+          <span class="flex items-center mr-3 text-2xl cursor-pointer mob">
+            <img src="icons/menu-outline.svg" onclick="Menu(this)" alt="error" class="w-5 h-5 ouvert">
+            <img src="icons/close.svg" onclick="Menu(this)" alt="error" class="w-5 h-5 fermer hidden">
           </span>
 
         </div>
 
-      </div>
-      <ul class=" md:flex md:items-center md:justify-around z-0 md:z-auto md:static absolute bg-y-300 w-full left-0indigo
-      md:opacity-100 opacity-0 top-[-450px] transition-all ease-in duration-500">
+      </div>  
+    </nav>
+<div class="absolute z-40 w-full duration-500 opacity-0 top-[-10%]  liste " style="backdrop-filter: blur(25px);">
+        <ul class=" md:flex md:items-center md:justify-around">
 
         <li
-          class="flex items-center justify-center duration-200 text-indigo-300 border-t-[1px] border-b-[1px] border-white hover:bg-y-300 bg-white hover:text-whindigote">
+          class="flex items-center justify-center duration-200 hover:bg-y-300 text-white hover:text-indigote">
           <a class="my-4 font-bold" href="#">Home</a></li>
         <li
-          class="flex items-center justify-center duration-200 text-white border-t-[1px] border-b-[1px] border-white hover:bg-y-300">
-          <a class="my-4 font-bold" href="cathalog.html">Cathalog</a></li>
+          class="flex items-center justify-center duration-200 text-white hover:bg-y-300">
+          <a class="my-4 font-bold" href="cathalog.html">Contact</a></li>
         <li
-          class="flex items-center justify-center duration-200 text-white border-t-[1px] border-b-[1px] border-white hover:bg-y-300">
-          <a class="my-4 font-bold " href="boutique.html">Ourstore</a></li>
+          class="flex items-center justify-center duration-200 text-white hover:bg-y-300">
+          <a class="my-4 font-bold " href="boutique.html">FAQ</a></li>
         <li
-          class="flex items-center justify-center duration-200 text-white border-t-[1px] border-b-[1px] border-white hover:bg-y-300">
-          <a class="my-4 font-bold " href="message.html">Contact</a></li>
+          class="flex items-center justify-center duration-200 text-white hover:bg-y-300">
+          <a class="my-4 font-bold " href="message.html">About us</a></li>
 
       </ul>
-    </nav>
-
+      </div>
  </div>
 
 <!--------------------------------- -----------------------------------------------------
@@ -163,12 +163,13 @@
   <div class="w-full h-10"></div>
   <div class="w-full h-screen ">
     <div class="relative z-0 w-full h-full">
-      <img src="image/image1.png" alt="error" class="absolute z-20 object-cover w-full h-full">
+      <img src="image/image6.jpg" alt="error" class="absolute z-20 object-cover w-full h-full"> 
+      
       <div class="relative z-30 w-full h-full bg-black/70 ">
         <div class="ml-5 top-40 md:pt-48">
           <div class="relative w-[95%] p-2 m-0 top-40 ">
-            <div class="relative z-10 font-serif text-2xl text-yellow-300 ">
-              "Simplifiez votre parcour academique ,une requete a la fois,vers l'excellence."
+            <div class="relative z-10 font-serif text-2xl text-yellow-300 md:text-4xl">
+              "Simplify your academic journey, one request at a time, towards excellence."
 
             </div>
 
@@ -176,14 +177,13 @@
           <div class="relative w-[75%] p-2  top-40 ">
 
             <div class="relative z-10 text-white">
-              "Rejoignez-nous des aujoud'hui pour simplifier votre
-              parcours acadamique et transformer vos requetes en
-              reussites concretes."
+              "Join us today to simplify your academic journey and turn your requests into tangible successes.!!!!!"
+
             </div>
 
           </div>
           <button class="relative p-2 ml-3 font-bold text-white uppercase bg-yellow-400 rounded-lg top-44">
-           login
+           login here
           </button>
         </div>
       </div>
@@ -197,20 +197,32 @@
 -----------------------------------|                    |----------------------------------
 ------------------------------------------------------------------------------------------>
 <section class="block w-full mt-4 mb-10 md:justify-center md:items-center md:flex bg-slate-200">
-<div class="flex items-center justify-center w-full md:w-1/2">
-  <div class="flex items-center justify-center w-full h-64 mt-5 bg-yellow-400 md:rounded-lg md:m-10 md:h-48 md:w-40">
-    <img src="image/image3.png" alt="error " class="md:h-48 mt-10 md:ml-10 md:rounded-lg md:absolute md:w-40 w-[80%] h-64 "> 
+<div class="flex items-center justify-center w-full  md:w-[40%]">
+  <div class="flex items-center justify-center w-full h-64 mt-5 bg-yellow-200 md:rounded-lg md:m-10 md:h-72 md:w-72">
+    <img src="image/image11.jpg" alt="error " class="md:h-72 mt-12 md:ml-14 md:rounded-lg md:absolute md:w-72 w-[80%] h-64 ">
+     
   </div>
 </div>
-<div class="w-full mt-16 md:w-1/2 md:mt-0">
+<div class="w-full mt-16  md:w-[60%] md:mt-0 p-4">
   <div class="flex items-center justify-center w-full md:block">
   <span class="font-bold capitalize md:text-2xl ">
     the best solution will alwas be guaranteed
   </span>
 </div>
-  <div class="md:w-[70%] w-full md:p-0 p-5">
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus perferendis at autem sit obcaecati dignissimos itaque iusto, dicta maxime placeat ex asperiores, minima quae velit doloribus veritatis aliquam quos temporibus.
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit eaque autem, itaque aperiam illo veniam repellendus, temporibus nemo fugit perspiciatis maxime reprehenderit quibusdam ullam eum placeat omnis sit, voluptas deserunt.
+  <div class="w-full p-5 text-justify md:p-0">
+ <span class="font-medium">"Simplify your academic journey, one request at a time, towards excellence."</span> 
+
+In the bustling world of academia, navigating through various administrative processes can often feel like traversing a labyrinth. From submitting assignments to requesting transcripts or scheduling appointments with professors, students are frequently bogged down by the sheer volume of administrative tasks they must tackle alongside their studies.
+
+However, imagine a solution that streamlines this complex web of paperwork and bureaucracy, placing the power to manage academic requests directly into the hands of students. Enter our academic request management application – a revolutionary tool designed to simplify your academic journey, one request at a time, guiding you towards excellence.........
+
+<!-- With our application, students can effortlessly submit and track their requests with just a few clicks, eliminating the need for endless paperwork and long queues. Need to request an extension on an assignment? Simply log in, fill out the necessary details, and submit your request within minutes. Seeking approval for a research project? Our application ensures that your request reaches the right channels promptly, saving you valuable time and energy.
+
+But it doesn't stop there. Our intuitive interface provides students with real-time updates on the status of their requests, allowing them to stay informed every step of the way. No more anxiously waiting for responses or wondering about the progress of your applications – with our application, you're always in the loop.
+
+Moreover, our platform goes beyond mere request submission. It serves as a comprehensive hub for all academic administrative tasks, offering resources and guidance to help students navigate the complexities of university life. Whether it's accessing academic calendars, scheduling advising appointments, or accessing important documents, our application centralizes everything you need to thrive academically.
+
+In essence, our academic request management application revolutionizes the way students interact with administrative processes, making their academic journey smoother, more efficient, and ultimately, more rewarding. So why struggle through the maze of paperwork alone when you can simplify your path to excellence, one request at a time, with our innovative solution? Join us today and embark on a journey towards academic success like never before. -->
  
 </div>
 
@@ -221,30 +233,42 @@
   
 </section>
 <section class="block w-full mt-4 mb-10 md:justify-center md:items-center md:flex bg-slate-200">
-<div class="flex items-center justify-center w-full md:w-1/2">
-  <div class="flex items-center justify-center w-full h-64 mt-5 bg-yellow-400 md:rounded-lg md:m-10 md:h-48 md:w-40">
-    <img src="image/image3.png" alt="error " class="md:h-48 mt-10 md:ml-10 md:rounded-lg md:absolute md:w-40 w-[80%] h-64 "> 
-  </div>
-</div>
-<div class="w-full mt-16 md:w-1/2 md:mt-0">
-  <div class="flex items-center justify-center w-full md:block">
-  <span class="font-bold capitalize md:text-2xl ">
-    the best solution will alwas be guaranteed
-  </span>
-</div>
-  <div class="md:w-[70%] w-full md:p-0 p-5 grid grid-cols-4 gap-5">
-<img src="image/image1.png" alt="" class="h-40">
-<img src="image/image1.png" alt="h-40">
-<img src="image/image1.png" alt="h-40">
-<img src="image/image1.png" alt="h-40">
+<div class="hidden md:block md:w-[50%]">
+  <div class="w-full p-3 md:flex md:justify-center md:items-center">
+    <div class="w-full p-5 text-justify md:p-5">
+ <span class="mb-12 text-2xl font-bold">"The enlightened requests accompany our students throughout their academic journey."</span><br> 
+<span class="text-slate-600">
+  Embark on your academic journey with confidence, knowing that enlightened requests are here to guide you every step of the way. Whether it's seeking extensions, requesting transcripts, or scheduling appointments, our platform ensures seamless navigation through administrative processes. With enlightened requests by your side, you can focus on what truly matters – your education. Join us today and experience the difference as we illuminate your path to success
+</span>
 
-<button class="p-2 mt-5 mb-10 ml-5 font-bold text-white bg-yellow-400 rounded-sm md:ml-0">
-  see more
-</button>
+ 
 </div>
+</div>
+</div>
+<div class="w-full mt-16 md:w-[60%] md:mt-0  md:flex md:justify-center md:items-center  p-3">
   
-</section>
+  <div class="grid w-full grid-cols-2 gap-1 md:p-0 md:w-[70%]">
+<img src="image/image10.jpg" alt="" class="md:h-36 ">
+<img src="image/image5.jpg" alt="" class="md:h-44 ">
+<img src="image/image3.jpg" alt="" class="md:h-28">
+<img src="image/image4.jpg" alt="" class="md:h-32 ">
+  </div>
 
+</div>
+<div class=" md:hidden block md:w-[50%]">
+  <div class="w-full md:flex md:justify-center md:items-center">
+    <div class="w-full p-5 text-justify md:p-5">
+ <span class="mb-12 text-2xl font-bold">"The enlightened requests accompany our students throughout their academic journey."</span><br> 
+<span class="text-slate-600">
+  Embark on your academic journey with confidence, knowing that enlightened requests are here to guide you every step of the way. Whether it's seeking extensions, requesting transcripts, or scheduling appointments, our platform ensures seamless navigation through administrative processes. With enlightened requests by your side, you can focus on what truly matters – your education. Join us today and experience the difference as we illuminate your path to success
+</span>
+
+ 
+</div>
+</div>
+</div>
+</section>
+  
 <section class="w-full my-3 mb-11">
     <div class="flex items-center justify-center w-full">
         <h4 class="text-indigo-700">Comments</h4>
@@ -264,7 +288,7 @@
             <div class="font-bold uppercase">elaijah mikaelson</div>
             </div> 
             <div class="">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, debitis harum impedit animi quasi iure, illum beatae totam consequuntur molestiae nesciunt dignissimos dicta sequi qui numquam maiores corporis aliquid dolore.
+              With this academic request management app, students can finally streamline their administrative tasks effortlessly. From requesting course extensions to booking appointments with advisors, it simplifies the academic journey, one request at a time, guiding them towards excellence."
             </div>
             </div>
          <div class="p-2 my-5 border-2 rounded-lg border-slate-400 md:my-0">
@@ -277,7 +301,7 @@
             <div class="font-bold uppercase">elaijah mikaelson</div>
             </div> 
             <div class="">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, debitis harum impedit animi quasi iure, illum beatae totam consequuntur molestiae nesciunt dignissimos dicta sequi qui numquam maiores corporis aliquid dolore.
+               "Gone are the days of waiting in long queues and filling out endless paperwork. This application empowers students to take control of their academic requests, ensuring prompt responses and efficient processing. Simplify your path to success, one request at a time, and embark on a journey towards excellence like never before."
             </div>
             </div>
             
@@ -291,7 +315,8 @@
             <div class="font-bold uppercase">elaijah mikaelson</div>
             </div> 
             <div class="">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, debitis harum impedit animi quasi iure, illum beatae totam consequuntur molestiae nesciunt dignissimos dicta sequi qui numquam maiores corporis aliquid dolore.
+               
+              "This revolutionary app not only simplifies the administrative burden on students but also fosters a culture of efficiency and excellence. By centralizing academic requests and providing real-time updates, it enables students to focus more on their studies and less on bureaucracy. Simplify your academic journey, one request at a time, and unlock your full potential."
             </div>
             </div>
     </div>
@@ -312,8 +337,11 @@
             reserves</div>
 
     </footer>
-  
-</footer>
+    
+  <script src="module.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+
+
 </body>
 
 </html>

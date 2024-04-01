@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="output.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+    <div class="block md:hidden">
+        <nav class="fixed z-50 w-full bg-white shadow md:flex md:items-center md:justify-between">
+            <div class="flex items-center justify-between">
+                <div class="w-1/2">
+                    <span class="flex w-full ">
+                        <img src="logo1.png" alt="error" class="w-20 h-20 rounded-full ">
+                    </span>
+                </div>
+                <div class="flex items-center justify-center">
+                    <span class="flex items-center mx-2 text-xl cursor-pointer">
+                        <img src="icons/search-outline.svg" id="loupe" alt="error" class="w-5 h-5">
+                    </span>
+                    <span class="flex items-center text-xl cursor-pointer">
+                        <img src="icons/notifications-outline.svg" alt="error" class="w-5 h-5">  
+                    </span>
+                    <a href="dashboard.html">
+                        <span class="flex items-center justify-center mx-3 text-xl ">
+                            <img src="icons/person.svg" alt="error" class="w-5 h-5">
+                        </span>
+                    </a>
+                    <span class="flex items-center mr-3 text-2xl cursor-pointer">
+                        <img src="icons/menu-outline.svg" onclick="Menu(this)" alt="error" class="w-5 h-5" id="hamburger">
+                    </span>
+                </div>
+            </div>
+            <ul class="md:flex md:items-center md:justify-around z-0 md:static absolute bg-y-300 w-full left-0 md:opacity-100 opacity-0 top-[-450px] transition-all ease-in duration-500 bg-white">
+                <li class="flex items-center justify-center duration-200 text-indigo-300 border-t-[1px] border-b-[1px] border-white hover:bg-y-300 bg-white hover:text-whindigote">
+                    <a class="my-4 font-bold" href="#">Home</a>
+                </li>
+                <li class="flex items-center justify-center duration-200 text-indigo-500 border-t-[1px] border-b-[1px] border-white hover:bg-y-300">
+                    <a class="my-4 font-bold" href="cathalog.html">Contact</a>
+                </li>
+                <li class="flex items-center justify-center duration-200 text-indigo-500 border-t-[1px] border-b-[1px] border-white hover:bg-y-300">
+                    <a class="my-4 font-bold " href="boutique.html">FAQ</a>
+                </li>
+                <li class="flex items-center justify-center duration-200 text-indigo-500 border-t-[1px] border-b-[1px] border-white hover:bg-y-300">
+                    <a class="my-4 font-bold " href="message.html">About us</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <script>
+        function Menu(e) {
+            let list;
+            if (e.getAttribute('id') === 'menu') {
+                e.setAttribute('id', 'close');
+                list = document.querySelector('.block ul'); // Sélectionne le ul dans la barre de navigation mobile
+                list.classList.add('top-[80px]');
+                list.classList.add('opacity-100');
+            } else {
+                e.setAttribute('id', 'menu');
+                list = document.querySelector('.block ul'); // Sélectionne le ul dans la barre de navigation mobile
+                list.classList.remove('top-[80px]');
+                list.classList.remove('opacity-100');
+            }
+        }
+    </script>
+</body>
+</html>
