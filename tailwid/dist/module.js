@@ -8,7 +8,7 @@ mob.addEventListener("click",()=>{
   
   if(isdown)
   {
-  liste.classList.add("top-[12%]","opacity-100","fixed");
+  liste.classList.add("top-[15%]","opacity-100","fixed");
   ouvert.classList.add("hidden","duration-500");
   fermer.classList.remove("hidden");
  
