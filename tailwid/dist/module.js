@@ -22,3 +22,40 @@ else{
 isdown=!isdown;
 
 });
+ 
+let text=document.querySelector(".test");
+let arrow=document.querySelectorAll(".fleche");
+arrow.forEach(element => {
+
+        element.addEventListener("click", () => {
+            // Trouver l'élément parent qui contient la réponse
+            let parentTab = element.closest('.tab');
+            // Trouver l'élément .answer associé à l'élément parent
+            let answer = parentTab.querySelector('.answer');
+            // Appliquer ou supprimer la classe .h-full sur l'élément .answer
+            answer.classList.toggle("h-full");
+            // Inverser la rotation de l'icône de flèche
+            element.classList.toggle("rotate-180");
+  
+});
+});
+  
+let ischecked=true;
+let oeil=document.querySelector(".oeil");
+let oeilf=document.querySelector(".oeilf");
+let passwordInput = document.querySelector("input[type='password']");
+
+oeilf.addEventListener("click", () => {
+    
+        oeilf.classList.add("hidden");
+        oeil.classList.remove("hidden");
+        passwordInput.type = "text"; // Rend le mot de passe visible
+   
+})
+oeil.addEventListener("click", () => {
+    
+        oeil.classList.add("hidden");
+        oeilf.classList.remove("hidden");
+        passwordInput.type = "password"; // Rend le mot de passe visible
+    
+})
