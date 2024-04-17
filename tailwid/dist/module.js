@@ -28,14 +28,15 @@ let arrow=document.querySelectorAll(".fleche");
 arrow.forEach(element => {
 
         element.addEventListener("click", () => {
+                // Inverser la rotation de l'icône de flèche
+            element.classList.toggle("rotate-180");
             // Trouver l'élément parent qui contient la réponse
             let parentTab = element.closest('.tab');
             // Trouver l'élément .answer associé à l'élément parent
             let answer = parentTab.querySelector('.answer');
             // Appliquer ou supprimer la classe .h-full sur l'élément .answer
             answer.classList.toggle("h-full");
-            // Inverser la rotation de l'icône de flèche
-            element.classList.toggle("rotate-180");
+            
   
 });
 });
